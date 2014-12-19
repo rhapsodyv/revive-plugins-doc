@@ -131,7 +131,7 @@ Example:
 
 * [3rdPartyServers](): TODO
 * [admin](): TODO
-* [api](): Extends XMLRPC api (TODO)
+* [api](api-component.md): Extends XMLRPC api (TODO)
 * [authentication](): TODO
 * [bannerTypeHtml](): TODO
 * [bannerTypeText](): TODO
