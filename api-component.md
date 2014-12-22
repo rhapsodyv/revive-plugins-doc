@@ -29,3 +29,6 @@ $dispatches = array(
         'docstring' => 'Logon method'               /* method docs */
     ),
 ```
+
+# Tutorial
+* [Creating an Hello World Api Plugin] (tutorial/api-hello-world.md)
