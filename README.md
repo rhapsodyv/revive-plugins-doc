@@ -9,7 +9,7 @@ This repo is an effort to documentate the revive plugin system and create some t
 
 ## Revive Components Description
 
-* [Api] (api-component.md)
+* [Api] (components/api-component.md)
 * Others TODO
 
 ## Tutorials
