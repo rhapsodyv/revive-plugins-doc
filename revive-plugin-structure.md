@@ -29,7 +29,7 @@ Archive:  helloWorld.zip
       724  12-09-14 17:11   plugins/etc/helloWorld/helloWorld.xml
       683  12-09-14 17:11   plugins/etc/helloWorld.xml
  --------                   -------
-     5790                   9 files
+     5790                   8 files
 ```
 
 # Definition Files
