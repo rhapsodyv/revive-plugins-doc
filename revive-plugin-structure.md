@@ -143,3 +143,5 @@ Example:
 * [invocationTags](): TODO
 * [reports](): To create new Reports (TODO)
 * Other class to extend: TODO
+
+All the base classes for plugins are found in the folder *lib/OX/Extension*
