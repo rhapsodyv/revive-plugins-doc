@@ -127,11 +127,11 @@ Example:
 * file: Each file must be follow the folder structure as defined above.
 
 
-### Revive Components
+# Revive Components
 
 * [3rdPartyServers](): TODO
 * [admin](): TODO
-* [api](api-component.md): Extends XMLRPC api (TODO)
+* [api](api-component.md): Extends XMLRPC api
 * [authentication](): TODO
 * [bannerTypeHtml](): TODO
 * [bannerTypeText](): TODO
@@ -145,3 +145,6 @@ Example:
 * Other class to extend: TODO
 
 All the base classes for plugins are found in the folder *lib/OX/Extension*
+
+# Tutorials
+* [Creating an Hello World Api Plugin] (tutorial/api-hello-world.md)
