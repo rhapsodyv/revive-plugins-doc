@@ -12,6 +12,10 @@ This repo is an effort to documentate the revive plugin system and create some t
 * [Api] (components/api-component.md)
 * Others TODO
 
+## Uninstall a Plugin or Cleanup a Broken One
+
+* [Uninstall a Plugin or Cleanup a Broken One] (uninstall-plugin.md)
+
 ## Tutorials
 
 * [Creating an Hello World Api Plugin] (tutorial/api-hello-world.md)
