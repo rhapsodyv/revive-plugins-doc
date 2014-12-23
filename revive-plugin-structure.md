@@ -7,6 +7,7 @@ The plugin must be zipped with the following folder structure:
 ```Shell
  plugins/etc/___MY_PLUGIN_NAME___.XML
  plugins/etc/___MY_PLUGIN_NAME___.readme.txt
+ plugins/etc/___MY_PLUGIN_NAME___.uninstall.txt
  plugins/etc/___MY_PLUGIN_COMPONENT_1_NAME___/___MY_PLUGIN_COMPONENT_1_NAME___.XML
 
  plugins/___COMPONENT_1___/___MY_PLUGIN_COMPONENT_1_NAME___/___MY_FILES_1___
@@ -30,8 +31,9 @@ Archive:  helloWorld.zip
       724  12-09-14 17:11   plugins/etc/helloWorld/helloWorld.xml
       683  12-09-14 17:11   plugins/etc/helloWorld.xml
       683  12-09-14 17:11   plugins/etc/helloWorld.readme.txt
+      683  12-09-14 17:11   plugins/etc/helloWorld.uninstall.txt
  --------                   -------
-     5790                   9 files
+     5790                   10 files
 ```
 
 # Definition Files
@@ -62,6 +64,7 @@ XML example:
     <install>
         <files>
             <file path="{PLUGINPATH}">helloWorld.readme.txt</file>
+            <file path="{PLUGINPATH}">helloWorld.uninstall.txt</file>
         </files>
         <contents>
             <group name="helloWorld">1</group>
