@@ -89,6 +89,13 @@ XML example:
 * file: it is a plugin definition file 
 * contents: List the groups, where *name* is the name/id of the group (same name of the folder of the group) and the number inside this tag is the install order.
 
+#### ___MY_PLUGIN_NAME___.readme.txt
+It is an optional file for you describe with more details this plugin. For example, some notes about exception, change log
+and etc.
+
+#### ___MY_PLUGIN_NAME___.uninstall.txt
+It is an optional file  that you can show an alert if this plugin is deleted.
+
 ## Plugin Group Definition
 
 Each group must have a definition XML.
