@@ -123,6 +123,14 @@ Example:
         <files>
           <file path="{MODULEPATH}api/helloWorld/">helloWorld.class.php</file>
         </files>
+        <!-- optional configuration settings -->
+        <configuration>
+            <!-- only administrator has permissions to change settings in config file -->
+            <setting key="keyApiOne" type="text" label="label for key api one" required="0" size="64" visible="1">
+            </setting>  
+            <setting key="keyApiTwo" type="text" label="this label is hidden" required="1" size="64" visible="0">
+            </setting>     
+        </configuration>
     </install>
 </plugin>
 ```
@@ -142,6 +150,8 @@ Example:
 * install: 
 * files: List the files this group have.
 * file: Each file must be follow the folder structure as defined above.
+* configuration: is an optional configuration settings, you can group all settings key
+* setting : is an element into  configuration tag. If you want to show this element use visible="1" otherwise set value to "0". If you want show as required field use required= "1" otherwise set value to "0".
 
 
 # Revive Components
