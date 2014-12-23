@@ -31,4 +31,4 @@ $dispatches = array(
 ```
 
 # Tutorial
-* [Creating an Hello World Api Plugin] (tutorial/api-hello-world.md)
+* [Creating an Hello World Api Plugin] (../tutorial/api-hello-world.md)
