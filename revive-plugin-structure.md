@@ -153,6 +153,16 @@ Example:
 * configuration: is an optional configuration settings, you can group all settings key
 * setting : is an element into  configuration tag. If you want to show this element use visible="1" otherwise set value to "0". If you want show as required field use required= "1" otherwise set value to "0".
 
+### How use settings declared into Plugin Group Definition Xml
+In above example we have two keys: keyApiOne and keyApiTwo. These are stored in $conf variable, that you can acess from any php file into your plugin. Look this code:
+
+```PHP
+$conf = $GLOBALS['_MAX']['CONF']; 
+$aHelloWorldConf = $conf['helloWorld']; // this parameter must be the same name of your group that you have defined your keys
+$keyApiOne = $aHelloWorldConf['keyApiOne']; // this parameter is the same name key
+$keyApiTwo = $aHelloWorldConf['keyApiTwo'];
+```
+
 
 # Revive Components
 
