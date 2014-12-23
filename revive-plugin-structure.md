@@ -6,6 +6,7 @@ The plugin must be zipped with the following folder structure:
 
 ```Shell
  plugins/etc/___MY_PLUGIN_NAME___.XML
+ plugins/etc/___MY_PLUGIN_NAME___.readme.txt
  plugins/etc/___MY_PLUGIN_COMPONENT_1_NAME___/___MY_PLUGIN_COMPONENT_1_NAME___.XML
 
  plugins/___COMPONENT_1___/___MY_PLUGIN_COMPONENT_1_NAME___/___MY_FILES_1___
@@ -28,8 +29,9 @@ Archive:  helloWorld.zip
         0  12-09-14 17:11   plugins/etc/helloWorld/
       724  12-09-14 17:11   plugins/etc/helloWorld/helloWorld.xml
       683  12-09-14 17:11   plugins/etc/helloWorld.xml
+      683  12-09-14 17:11   plugins/etc/helloWorld.readme.txt
  --------                   -------
-     5790                   8 files
+     5790                   9 files
 ```
 
 # Definition Files
@@ -58,6 +60,9 @@ XML example:
     <type>package</type>
 
     <install>
+        <files>
+            <file path="{PLUGINPATH}">helloWorld.readme.txt</file>
+        </files>
         <contents>
             <group name="helloWorld">1</group>
         </contents>
@@ -77,6 +82,8 @@ XML example:
 * version: version of this plugin
 * type: Type of the plugin. For this XML is always *package*
 * install: Describes the groups this plugins have. All plugins must have at least on group, because the plugin must have at least one funcinality.
+* files: List files for this plugin.
+* file: it is a plugin definition file 
 * contents: List the groups, where *name* is the name/id of the group (same name of the folder of the group) and the number inside this tag is the install order.
 
 ## Plugin Group Definition
