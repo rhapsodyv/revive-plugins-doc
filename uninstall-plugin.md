@@ -8,11 +8,13 @@ But when we are developing things never work every time... So follow next...
 
 To remove a plugin manually follow this steps:
 
-1. Remove the plugin code
+### 1. Remove the plugin code
 ```
 $ rm -rf $REVIVE_PATH/plugins/COMPONENT_XX/MY_PLUGIN_FOLDER_1
 $ rm -rf $REVIVE_PATH/plugins/COMPONENT_YY/MY_PLUGIN_FOLDER_2
 ```
-2. Remove the plugin config
+###2. Remove the plugin config
 
 Edit the file **$REVIVE_PATH/var/MY_HOST.conf.php**, search for **[plugins]** and **[pluginGroupComponents]** and remove references for your plugin.
+
+###3. Remove any other file or table your plugin created
