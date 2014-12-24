@@ -163,6 +163,20 @@ $keyApiOne = $aHelloWorldConf['keyApiOne']; // this parameter is the same name k
 $keyApiTwo = $aHelloWorldConf['keyApiTwo'];
 ```
 
+# Using openXDeveloperToolbox
+It is a tool that you can creat in few steps a basic structure for your plugin.
+To add this feature for your adserver, download from [repository](https://github.com/revive-adserver/revive-adserver.git). Now you have all files to work on dev mode. Follow steps to install revive.
+
+```
+$ cd plugins_repo/
+$ ls -l
+```
+Into this folder you have zipkg.sh for zip any plugin. To use zipkg on your terminal 
+
+```
+$ ./zipkg.sh openXDeveloperToolbox
+```
+Now you will have a new zip openXDeveloperToolbox.zip. Log in with your adm account. So you will see Developer tab.
 
 # Revive Components
 
