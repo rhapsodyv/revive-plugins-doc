@@ -154,12 +154,12 @@ Example:
 
 ### How use settings declared into Plugin Group Definition Xml
 You can use optional configuration settings and preferences. Settings are written to a group section. In this case for [helloWorld].
-If you want to show this element use visible="1" otherwise set value to "0".
-If you want show as required field use required= "1" otherwise set value to "0".
-If you want a key type text, use type="text".
-If you need a key type checkbox like a boolean var, use type="checkbox".
+* If you want to show this element use visible="1" otherwise set value to "0".
+* If you want show as required field use required= "1" otherwise set value to "0".
+* If you want a key type text, use type="text".
+* If you need a key type checkbox like a boolean var, use type="checkbox".
 
-In above example we have three keys: keyApiOne and keyApiTwo. These are stored in $conf variable, that you can acess from any php file into your plugin. Look this code:
+In above example we have three keys: keyApiOne, keyApiTwo and keyApiThree. These are stored in $conf variable, that you can acess from any php file into your plugin. Look this code:
 
 ```PHP
 $conf = $GLOBALS['_MAX']['CONF']; 
