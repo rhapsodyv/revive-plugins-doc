@@ -126,10 +126,9 @@ Example:
         <!-- optional configuration settings -->
         <configuration>
             <!-- only administrator has permissions to change settings in config file -->
-            <setting key="keyApiOne" type="text" label="label for key api one" required="0" size="64" visible="1">
-            </setting>  
-            <setting key="keyApiTwo" type="text" label="this label is hidden" required="1" size="64" visible="0">
-            </setting>     
+            <setting key="keyApiOne" type="text" label="label for key api one" required="0" size="64" visible="1">Defaulf value</setting> 
+            <setting key="keyApiTwo" type="text" label="this label is hidden" required="1" size="64" visible="0">hidden</setting>  
+            <setting key="keyApiThree" type="checkbox" label="keyApiThree" required="1" size="64" visible="1">false</setting>     
         </configuration>
     </install>
 </plugin>
@@ -151,16 +150,23 @@ Example:
 * files: List the files this group have.
 * file: Each file must be follow the folder structure as defined above.
 * configuration: is an optional configuration settings, you can group all settings key
-* setting : is an element into  configuration tag. If you want to show this element use visible="1" otherwise set value to "0". If you want show as required field use required= "1" otherwise set value to "0".
+* setting : is an element into  configuration tag.
 
 ### How use settings declared into Plugin Group Definition Xml
-In above example we have two keys: keyApiOne and keyApiTwo. These are stored in $conf variable, that you can acess from any php file into your plugin. Look this code:
+You can use optional configuration settings and preferences. Settings are written to a group section. In this case for [helloWorld].
+If you want to show this element use visible="1" otherwise set value to "0".
+If you want show as required field use required= "1" otherwise set value to "0".
+If you want a key type text, use type="text".
+If you need a key type checkbox like a boolean var, use type="checkbox".
+
+In above example we have three keys: keyApiOne and keyApiTwo. These are stored in $conf variable, that you can acess from any php file into your plugin. Look this code:
 
 ```PHP
 $conf = $GLOBALS['_MAX']['CONF']; 
 $aHelloWorldConf = $conf['helloWorld']; // this parameter must be the same name of your group that you have defined your keys
 $keyApiOne = $aHelloWorldConf['keyApiOne']; // this parameter is the same name key
 $keyApiTwo = $aHelloWorldConf['keyApiTwo'];
+$keyApiThree = $aHelloWorldConf['keyApiThree'];
 ```
 
 # Using openXDeveloperToolbox
