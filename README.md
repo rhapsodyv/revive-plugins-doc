@@ -10,6 +10,7 @@ This repo is an effort to documentate the revive plugin system and create some t
 ## Revive Components Description
 
 * [Api] (components/api-component.md)
+* [Aunthentication] (components/authentication-component.md)
 * Others TODO
 
 ## Uninstall a Plugin or Cleanup a Broken One
