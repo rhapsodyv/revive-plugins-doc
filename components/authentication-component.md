@@ -7,9 +7,9 @@ Plugins_Authentication extends from OX_Component, so you can override some metho
 * displayLogin,
 * etc.
 
-You can see all methods and how it is defined accessing /lib/OX/Extension/authentication/authentication.php".
+You can see all methods and how it is defined accessing **$REVIVE_PATH/var/lib/OX/Extension/authentication/authentication.php**.
 
-Plugins_Authentication is called by Auth.php(/lib/OA/Auth.php) that reads a propriety "type" have defined in iphost.conf.php file. By default this property is setted as internal. So when you are writing a new implementation from Plugins_Authentication you must update in conf file the parameter type.
+Plugins_Authentication is called by Auth.php(**$REVIVE_PATH/lib/OA/Auth.php**) that reads a propriety "type" have defined in **$REVIVE_PATH/var/MY_HOST.conf.php** file. By default this property is setted as internal. So when you are writing a new implementation from Plugins_Authentication you must update in conf file the parameter type.
 
 Original conf:
 ```
@@ -37,13 +37,13 @@ The pluging should look something like this:
     └── etc
         ├── auth
         │   ├── auth.xml
-        ├── ldapAuth.readme.txt
-        ├── ldapAuth.uninstall.txt
-        └── ldapAuth.xml
+        ├── myAuth.readme.txt
+        ├── myAuth.uninstall.txt
+        └── myAuth.xml
 
 ```
 
 # Tutorial
-* [Creating an Hello World Authentication Plugin](../tutorial/authentication-my-auth.md)
-
-* [Authentication plugin using Active Directory (Adldap)](https://github.com/karen-mikaela/revive-plugins)
+* [Creating MyAuthentication Plugin](../tutorial/authentication-my-auth.md)
+* [A basic example Authentication plugin](https://github.com/karen-mikaela/my-auth-revive)
+* [Authentication plugin using Active Directory (Adldap)](https://github.com/karen-mikaela/ldap-auth)

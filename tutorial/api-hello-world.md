@@ -64,7 +64,7 @@ $ mkdir api/helloWorld
 </plugin>
 ```
 
-## 3. Creating Our Plugin API Class
+## 3. Creating Group Definition
 
 ```XML
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -91,7 +91,7 @@ $ mkdir api/helloWorld
 </plugin>
 ```
 
-## 3. Creating Our Plugin API Class
+## 4. Creating Our Plugin API Class
 
 The class file must be inside the group folder, as defined in the group XML above:
 
@@ -152,7 +152,7 @@ class Plugins_Api_HelloWorld_helloWorld extends Plugins_Api
 }
 ```
 
-## 4. Packaging the Plugin
+## 5. Packaging the Plugin
 
 To pack our plugin, we just need zip the contents:
 
@@ -182,6 +182,6 @@ Archive:  helloWorld.zip
 
 ```
 
-## 5. Uploading to Revive
+## 6. Uploading to Revive
 
-## 6. Testing Our XMLRPC Method
+## 7. Testing Our XMLRPC Method
