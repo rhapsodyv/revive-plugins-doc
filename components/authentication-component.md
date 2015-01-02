@@ -1,4 +1,4 @@
-You can change the flow that authentication works, to do that you can extend Plugins_Authentication class, it is an parent class for Authentication plugins.
+You can change the flow that authentication works, to do that you can extend Plugins_Authentication class, it is a parent class for Authentication plugins.
 
 # How Authentication Plugins Works
 Plugins_Authentication extends from OX_Component, so you can override some methods like: 
@@ -8,7 +8,7 @@ Plugins_Authentication extends from OX_Component, so you can override some metho
 * etc.
 You can see all methods and how it is defined accessing /lib/OX/Extension/authentication/authentication.php".
 
-_Plugins_Authentication is called by Auth.php(/lib/OA/Auth.php) that reads a propriety "type" have defined in iphost.conf.php file. By default this property is setted as internal. So when you are writing a new implementation from Plugins_Authentication you must update in conf file the parameter type.
+Plugins_Authentication is called by Auth.php(/lib/OA/Auth.php) that reads a propriety "type" have defined in iphost.conf.php file. By default this property is setted as internal. So when you are writing a new implementation from Plugins_Authentication you must update in conf file the parameter type.
 
 Original conf:
 ```
