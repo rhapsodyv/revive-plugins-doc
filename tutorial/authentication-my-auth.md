@@ -166,7 +166,7 @@ Now edit **auth.xml** file, and add the reference in **install** tag
     <file path="{PLUGINPATH}">myAuth.readme.txt</file>
     <file path="{PLUGINPATH}">myAuth.uninstall.txt</file>
 </files>
-``
+```
 ## 6. Packaging the Plugin
 
 To pack our plugin, we just need zip the contents:
