@@ -6,6 +6,7 @@ Plugins_Authentication extends from OX_Component, so you can override some metho
 * logout,
 * displayLogin,
 * etc.
+
 You can see all methods and how it is defined accessing /lib/OX/Extension/authentication/authentication.php".
 
 Plugins_Authentication is called by Auth.php(/lib/OA/Auth.php) that reads a propriety "type" have defined in iphost.conf.php file. By default this property is setted as internal. So when you are writing a new implementation from Plugins_Authentication you must update in conf file the parameter type.
