@@ -1,12 +1,48 @@
 You can change the flow that authentication works, to do that you can extend Plugins_Authentication class, it is an parent class for Authentication plugins.
 
-# How Authentication Plugins Works 
+# How Authentication Plugins Works
+Plugins_Authentication extends from OX_Component, so you can override some methods like: 
+* checkPassword,
+* logout,
+* displayLogin,
+* etc.
+You can see all methods and how it is defined accessing /lib/OX/Extension/authentication/authentication.php".
 
+_Plugins_Authentication is called by Auth.php(/lib/OA/Auth.php) that reads a propriety "type" have defined in iphost.conf.php file. By default this property is setted as internal. So when you are writing a new implementation from Plugins_Authentication you must update in conf file the parameter type.
 
-### Authentication Definition Example:
+Original conf:
+```
+...
+[authentication]
+type="internal"
+...
+```
+The name of type is a string that follow this rule: extensionName:groupName:componentName.
+Example to set a custom type:
+```
+...
+[authentication]
+type="authentication:auth:authComponent"
+...
+```
+### Authentication Example:
+The pluging should look something like this:
 
+```sh
+└── plugins
+    ├── authentication
+    │   └── auth
+    │       ├── authComponent.class.php
+    └── etc
+        ├── auth
+        │   ├── auth.xml
+        ├── ldapAuth.readme.txt
+        ├── ldapAuth.uninstall.txt
+        └── ldapAuth.xml
+
+```
 
 # Tutorial
-* [Creating an Hello World Authentication Plugin] (../tutorial/authentication-my-auth.md)
+* [Creating an Hello World Authentication Plugin](../tutorial/authentication-my-auth.md)
 
-* [Authentication plugin using  Active Directory (Adldap)](https://github.com/karen-mikaela/revive-plugins)
+* [Authentication plugin using Active Directory (Adldap)](https://github.com/karen-mikaela/revive-plugins)
