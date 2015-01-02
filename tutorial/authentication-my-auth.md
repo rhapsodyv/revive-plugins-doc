@@ -159,13 +159,14 @@ Create two txt files:
 * First file save as myAuth/plugins/etc/**myAuth.readme.txt**
 * Second file save as myAuth/plugins/etc/**myAuth.uninstall.txt**
 
-Now edit **auth.xml** file, and add the reference in <install> tag
+Now edit **auth.xml** file, and add the reference in **install** tag
 
+```XML
 <files>
     <file path="{PLUGINPATH}">myAuth.readme.txt</file>
     <file path="{PLUGINPATH}">myAuth.uninstall.txt</file>
 </files>
-
+``
 ## 6. Packaging the Plugin
 
 To pack our plugin, we just need zip the contents:
