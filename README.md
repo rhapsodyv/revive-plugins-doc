@@ -3,6 +3,11 @@ Revive Plugin Docs
 
 This repo is an effort to documentate the revive plugin system and create some tutorials. 
 
+## Probability and Delivery Details
+
+* [Ad Probability Calculus] (ad-probability-calculus.md)
+* [Delivery Ad Probability Logic] (delivery-ad-probability-logic.md)
+
 ## Plugin Structure
 
 * [Plugin Structure] (revive-plugin-structure.md)
