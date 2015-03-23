@@ -5,7 +5,7 @@ This doc describes how revive maintenance system calculates the ads probabilitie
 
 Banner remaining impressions[1]:
 ```
-[campaign targeting impressions] -  [campaign delivered impressions]
+[campaign targeting impressions] - [campaign delivered impressions]
 
 ==> Distributed to the campaign banners taking in account banner weights
 ```
