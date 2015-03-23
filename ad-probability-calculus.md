@@ -1,7 +1,7 @@
 Ad Probability Calculus
 ==================
 
-This doc describes how revive maintenance system calculates the ads probabilities.
+This doc describes how revive maintenance system calculates the ads probabilities for contract campaigns (without ecpm optimization).
 
 Banner remaining impressions[1]:
 ```
