@@ -24,4 +24,5 @@ This repo is an effort to documentate the revive plugin system and create some t
 
 ## Tutorials
 
-* [Creating an Hello World Api Plugin] (tutorial/api-hello-world.md)
+* [Creating a Hello World Api Plugin] (tutorial/api-hello-world.md)
+* [Creating an Authentication Plugin ](https://github.com/karen-mikaela/my-auth-revive)
